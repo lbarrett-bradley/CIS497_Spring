@@ -8,7 +8,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface BuffBehavior 
+public abstract class BuffBehavior : MonoBehaviour
 {
-    void buff();
+    public PlayerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+
+    public abstract void buff();
+    public abstract void debuff();
 }

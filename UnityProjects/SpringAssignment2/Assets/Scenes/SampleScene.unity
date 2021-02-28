@@ -220,6 +220,8 @@ GameObject:
   - component: {fileID: 1015232447}
   - component: {fileID: 1015232446}
   - component: {fileID: 1015232451}
+  - component: {fileID: 1015232453}
+  - component: {fileID: 1015232452}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -421,6 +423,34 @@ MonoBehaviour:
   speed: 10
   jumpForce: 5
   rb: {fileID: 0}
+--- !u!114 &1015232452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015232445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b3b39bc55958a4b95495c0047bee8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buffBehavior: {fileID: 0}
+  isActiveShoe: 0
+--- !u!114 &1015232453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015232445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f05b69ef609474684c670fd205e417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buffBehavior: {fileID: 0}
+  isActiveShoe: 0
 --- !u!1 &1473727802
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,9 +13,13 @@ public class PlayerController : MonoBehaviour
     public float speed = 10;
     public float jumpForce = 200;
     public Rigidbody2D rb;
+    private Shoe speedShoe;
+    private Shoe jumpShoe;
 
     void Start()
     {
+        speedShoe = gameObject.GetComponent<SpeedShoe>();
+        jumpShoe = gameObject.GetComponent<JumpShoe>();
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
@@ -35,6 +39,28 @@ public class PlayerController : MonoBehaviour
             {
                 rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             }
+        }
+
+        if (Input.GetKeyDown("1"))
+        {
+            if (jumpShoe.isActiveShoe)
+            {
+                jumpShoe.endBuff();
+            }
+
+            speedShoe.setBuffBehavior();
+            Debug.Log("Wearing Speed shoe");
+        }
+
+        if (Input.GetKeyDown("2"))
+        {
+            if (speedShoe.isActiveShoe)
+            {
+                speedShoe.endBuff();
+            }
+
+            jumpShoe.setBuffBehavior();
+            Debug.Log("Wearing Jump shoe");
         }
     }
 }
