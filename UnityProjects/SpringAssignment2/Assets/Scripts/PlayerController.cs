@@ -7,6 +7,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     private Shoe speedShoe;
     private Shoe jumpShoe;
+    public Text shoeText;
 
     void Start()
     {
@@ -49,6 +51,7 @@ public class PlayerController : MonoBehaviour
             }
 
             speedShoe.setBuffBehavior();
+            shoeText.text = "Current shoe: Speed Shoe";
             Debug.Log("Wearing Speed shoe");
         }
 
@@ -60,6 +63,7 @@ public class PlayerController : MonoBehaviour
             }
 
             jumpShoe.setBuffBehavior();
+            shoeText.text = "Current shoe: Jump Shoe";
             Debug.Log("Wearing Jump shoe");
         }
     }
