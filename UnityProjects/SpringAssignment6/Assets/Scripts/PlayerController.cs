@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Liam Barrett
+ * PlayerController.cs
+ * Spring Assignment 6
+ * Manages mouse and keyboard controls for the player
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
