@@ -10,8 +10,15 @@ using UnityEngine;
 
 public class LeftHand : Hand
 {
+    public IceBlock iceBlock;
+
+    void Start()
+    {
+        iceBlock = GameObject.FindGameObjectWithTag("Ice Block").GetComponent<IceBlock>();
+    }
+
     public override void spawnBlock()
     {
-        
+        Instantiate(iceBlock, transform.position, transform.rotation);
     }
 }

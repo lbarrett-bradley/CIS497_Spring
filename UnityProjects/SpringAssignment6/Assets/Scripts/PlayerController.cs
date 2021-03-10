@@ -11,6 +11,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     CharacterController characterController;
+    public Hand leftHand;
+    public Hand rightHand;
     public float turnSpeed = 4.0f;
     public float moveSpeed = 2.0f;
     public float gravity = 9.8f;
@@ -29,6 +31,14 @@ public class PlayerController : MonoBehaviour
     {
         MouseAiming();
         KeyboardMovement();
+        if (Input.GetMouseButtonDown(0))
+        {
+            leftHand.spawnBlock();
+        }
+        else if (Input.GetMouseButtonDown(1))
+        {
+            rightHand.spawnBlock();
+        }
     }
 
     void MouseAiming()
