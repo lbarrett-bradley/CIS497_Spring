@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Liam Barrett
+ * Mimic.cs
+ * Spring Assignment 8
+ * Subclass of Lootable that kills the player when interacted with
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

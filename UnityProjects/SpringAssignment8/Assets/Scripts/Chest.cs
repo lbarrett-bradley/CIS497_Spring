@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Liam Barrett
+ * Chest.cs
+ * Spring Assignment 8
+ * Subclass of Lootable that gives players money when interacted with
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

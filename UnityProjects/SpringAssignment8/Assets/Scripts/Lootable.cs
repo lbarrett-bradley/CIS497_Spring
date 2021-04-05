@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Liam Barrett
+ * Lootable.cs
+ * Spring Assignment 8
+ * Abstract class of the template method pattern
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

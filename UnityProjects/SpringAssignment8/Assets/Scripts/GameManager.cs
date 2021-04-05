@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Liam Barrett
+ * GameManager.cs
+ * Spring Assignment 8
+ * Manages overall game function, like whether the player is alive and how much money they have
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
