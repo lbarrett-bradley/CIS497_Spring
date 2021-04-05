@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lootable : MonoBehaviour
+public abstract class Lootable : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void loot()
     {
-        
+        //code to trigger animation of chest opening and making sound would go here
+        getReward();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public abstract void getReward();
 }
