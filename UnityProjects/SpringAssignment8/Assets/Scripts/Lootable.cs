@@ -10,5 +10,10 @@ public abstract class Lootable : MonoBehaviour
         getReward();
     }
 
+    public void OnMouseDown()
+    {
+        loot();
+    }
+
     public abstract void getReward();
 }
