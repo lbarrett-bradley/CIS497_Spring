@@ -70,6 +70,13 @@ public class ObjectPooler : MonoBehaviour
         objectToSpawn.transform.position = position;
         objectToSpawn.transform.rotation = rotation;
 
+        PooledObject pooledObj = objectToSpawn.GetComponent<PooledObject>();
+
+        if (pooledObj != null)
+        {
+            pooledObj.OnObjectSpawn();
+        }
+
         ReturnObjectToPool(tag, objectToSpawn);
 
         return objectToSpawn;
