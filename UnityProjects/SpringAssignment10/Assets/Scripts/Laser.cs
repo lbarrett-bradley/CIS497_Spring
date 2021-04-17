@@ -5,10 +5,12 @@ using UnityEngine;
 public class Laser : MonoBehaviour, PooledObject
 {
     public float speed;
+    private Rigidbody rb;
 
     public void OnObjectSpawn()
     {
-
+        rb = gameObject.GetComponent<Rigidbody>();
+        //would play shoot sound here
     }
 
     // Update is called once per frame
@@ -16,4 +18,9 @@ public class Laser : MonoBehaviour, PooledObject
     {
         
     }
+
+    //IEnumerable shoot()
+    //{
+
+    //}
 }
