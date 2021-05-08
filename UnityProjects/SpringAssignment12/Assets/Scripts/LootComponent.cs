@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class LootComponent : MonoBehaviour
+public abstract class LootComponent
 {
-    public void spawnLoot()
+    public virtual void spawnLoot()
     {
         throw new System.Exception("Invalid Operation for this object");
     }
 
-    public void add(LootComponent lootComponent)
+    public virtual void add(LootComponent lootComponent)
     {
         throw new System.Exception("Invalid Operation for this object");
     }
 
-    public void remove(LootComponent lootComponent)
+    public virtual void remove(LootComponent lootComponent)
     {
         throw new System.Exception("Invalid Operation for this object");
     }
 
-    public LootComponent getChild(int index)
+    public virtual LootComponent getChild(int index)
     {
         throw new System.Exception("Invalid Operation for this object");
     }

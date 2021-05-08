@@ -8,12 +8,6 @@ public class GameManager : MonoBehaviour
 {
     public Boss boss1;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void killBoss()
     {
         boss1.onKill();

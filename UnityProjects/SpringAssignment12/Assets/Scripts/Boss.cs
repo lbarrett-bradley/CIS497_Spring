@@ -18,9 +18,9 @@ public class Boss : MonoBehaviour
     {
         gameObject.GetComponent<MeshRenderer>().enabled = true;
 
-        loot1 = new Loot(loot1Prefab);
-        loot2 = new Loot(loot2Prefab);
-        loot3 = new Loot(loot3Prefab);
+        loot1 = new Loot(loot1Prefab, gameObject);
+        loot2 = new Loot(loot2Prefab, gameObject);
+        loot3 = new Loot(loot3Prefab, gameObject);
 
         loot2And3Pool = new LootPool();
         loot2And3Pool.add(loot2);

@@ -5,14 +5,16 @@ using UnityEngine;
 public class Loot : LootComponent
 {
     public GameObject lootPrefab;
+    public GameObject enemyToSpawnAt;
 
-    public Loot(GameObject lootPrefab)
+    public Loot(GameObject lootPrefab, GameObject enemyToSpawnAt)
     {
         this.lootPrefab = lootPrefab;
+        this.enemyToSpawnAt = enemyToSpawnAt;
     }
 
-    new public void spawnLoot()
+    public override void spawnLoot()
     {
-        Instantiate(lootPrefab, transform.position, transform.rotation);
+        GameObject.Instantiate(lootPrefab, enemyToSpawnAt.transform.position + new Vector3(Random.Range(-1.5f, 1.5f), 0f, 0f), enemyToSpawnAt.transform.rotation);
     }
 }

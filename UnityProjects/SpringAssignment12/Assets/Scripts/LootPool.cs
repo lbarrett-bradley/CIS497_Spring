@@ -6,22 +6,27 @@ public class LootPool : LootComponent
 {
     public List<LootComponent> lootComponents;
 
-    new public void add(LootComponent l)
+    public LootPool()
+    {
+        lootComponents = new List<LootComponent>();
+    }
+
+    public override void add(LootComponent l)
     {
         lootComponents.Add(l);
     }
 
-    new public void remove(LootComponent l)
+    public override void remove(LootComponent l)
     {
         lootComponents.Remove(l);
     }
 
-    new public LootComponent getChild(int index)
+    public override LootComponent getChild(int index)
     {
         return lootComponents[index];
     }
 
-    new public void spawnLoot()
+    public override void spawnLoot()
     {
         foreach (LootComponent loot in lootComponents)
         {
