@@ -9,12 +9,12 @@ public abstract class LootComponent : MonoBehaviour
         throw new System.Exception("Invalid Operation for this object");
     }
 
-    public void add(LootPool pool)
+    public void add(LootComponent lootComponent)
     {
         throw new System.Exception("Invalid Operation for this object");
     }
 
-    public void remove(LootPool pool)
+    public void remove(LootComponent lootComponent)
     {
         throw new System.Exception("Invalid Operation for this object");
     }

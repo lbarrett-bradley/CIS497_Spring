@@ -6,12 +6,12 @@ public class LootPool : LootComponent
 {
     public List<LootComponent> lootComponents;
 
-    public void add(LootComponent l)
+    new public void add(LootComponent l)
     {
         lootComponents.Add(l);
     }
 
-    public void remove(LootComponent l)
+    new public void remove(LootComponent l)
     {
         lootComponents.Remove(l);
     }
